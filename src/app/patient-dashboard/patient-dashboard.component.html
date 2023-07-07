@@ -1,0 +1,58 @@
+<div class="menu">
+    <mat-toolbar color="primary" class="mat-elevation-z8">
+        <img src="assets/img/clinic (2).png" style="width: 50px;">
+        <span>Clinic Management System</span>
+
+        <div class="space"></div>
+        <ul>
+            <a mat-raised-button color="accent" href="home">Home</a>
+            <a mat-button href="aboutus">About Us</a>
+            <a mat-button href="doctor">Doctor</a>
+            <a mat-button >My Account</a>
+        </ul>
+    </mat-toolbar>
+    <div class="header">
+        <p class="font-properties">PATIENT ADMINISTRATION DASHBOARD</p>
+    </div><br><br>
+
+    <div class="wrapper">
+        <section class="columns">
+            <div class="colum">
+                <div class="image-content">
+                    <span class="overlay"></span>
+    
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Insert More details</h2>
+                    <!-- <button mat-raised-button color="primary" routerLinkActive="moreDetails">Inser More Details</button> -->
+                    <a mat-button href="moreDetails" (click)="openAddEditPdetails()" color="primary">Click here</a>
+                </div>
+            </div>
+    
+            <div class="colum">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                </div>
+                <div class="card-content">
+                    <h2 class="name">Book Appointment</h2>
+                    <a mat-button href="#">Click here</a>
+                </div>
+            </div>
+    
+            <div class="colum">
+                <div class="image-content">
+                    <span class="overlay"></span>
+  
+                </div>
+                <div class="card-content">
+                    <h2 class="name">View Appointment</h2>
+                    <a mat-button href="#">Click here</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="outer-footer">
+
+    </div>

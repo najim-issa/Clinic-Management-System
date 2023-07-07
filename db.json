@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "moreDetails": [
+    {
+      "Id": 1,
+      "firstName": "Salum",
+      "lastName": "kombo",
+      "email": "salum@gmail.com",
+      "dob": "20/09/2002",
+      "gender": "male",
+      "address": "Kiembe samaki",
+      "phonenumber": "78909876543",
+      "id": 3
+    },
+    {
+      "Id": 5,
+      "firstName": "Salum",
+      "lastName": "kombo",
+      "email": "salum@gmail.com",
+      "dob": "20/09/2002",
+      "gender": "male",
+      "address": "Kiembe samaki",
+      "phonenumber": "78909876543",
+      "id": 5
+    },
+    {
+      "firstName": "jgx CS",
+      "lastName": "DVU I",
+      "email": "achgbbh@gmail.com",
+      "address": "CGAAYD G",
+      "gender": "Female",
+      "phonenumber": "12345678",
+      "epnumber": "12345678",
+      "dob": "2023-07-18T07:00:00.000Z",
+      "state": "tz",
+      "id": 6
+    }
+  ],
+  "signup": []
+}

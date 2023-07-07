@@ -1,0 +1,37 @@
+<div class="menu">
+  <mat-toolbar color="primary" class="mat-elevation-z8">
+      <img src="assets/img/clinic (2).png" style="width: 50px;">
+      <span>Clinic Management System</span>
+
+      <div class="space"></div>
+
+          <a mat-raised-button color="accent" href="home">Back Home</a>
+
+
+  </mat-toolbar>
+</div>
+<form>
+    
+    <div class="imgcontainer">
+    <img src="assets/img/user.png" style="height: 50%; width: 20%;">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit" routerLink="/patientDashboard">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+  
+</form>

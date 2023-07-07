@@ -1,0 +1,119 @@
+<div>
+
+    <div class="menu">
+        <mat-toolbar color="primary" class="mat-elevation-z8">
+            <img src="assets/img/clinic (2).png" style="width: 50px;">
+            <span>Clinic Management System</span>
+
+            <div class="space"></div>
+            <ul>
+                <a mat-raised-button color="accent" href="home">Home</a>
+                <a mat-button href="aboutus">About Us</a>
+                <a mat-button href="doctor">Doctor</a>
+                <a mat-button (click)="openDialog()">Contact us</a>
+                <a mat-button type="button" [matMenuTriggerFor]="settingsMenu">User Login<mat-icon ><img src="assets/img/icon.png" style="width: 100%;"></mat-icon></a>
+                <a mat-button type="button" [matMenuTriggerFor]="settingsMenu1">Sign Up<mat-icon ><img src="assets/img/icon.png"  style="width: 100%;"></mat-icon></a>
+            </ul>
+
+
+        </mat-toolbar>
+
+        <mat-menu #settingsMenu="matMenu">
+            <menu mat-button mat-menu-item routerLink="/userlogin">Patient Login</menu>
+            <menu mat-button mat-menu-item routerLink="/userlogin">Doctor Login</menu>
+          </mat-menu>
+
+          <mat-menu #settingsMenu1="matMenu">
+            <menu mat-button mat-menu-item routerLink="/signup">I am Patient</menu>
+            <menu mat-button mat-menu-item routerLink="/registration">I am Doctor</menu>
+          </mat-menu>
+
+    </div>
+
+    <div class="imagetu">
+        <img src="assets/img/images (12).jpeg" style="width: 100%; height:450px;">
+    </div><br>
+
+    <div class="wrapper">
+        <section class="columns">
+            <div class="colum">
+                <h2>Patient Management</h2>
+                <p class="range">It encompasses a range of tasks and responsibilities related to the organization,
+                    coordination, and deliver of patient care throughout their healthcare.</p>
+                <img src="assets/img/images1.jpeg" style="width: 150%; border-radius: 10px;">
+            </div>
+
+            <div class="colum">
+                <h2>Doctor Management</h2>
+                <p class="range">It encompasses a range of tasks and responsibilities related to the organization,
+                    coordination, and deliver of patient care throughout their healthcare.</p>
+                <img src="assets/img/download (3).jpeg" style="width: 100%; border-radius: 10px;">
+            </div>
+
+            <div class="colum">
+                <h2>Appointment Management</h2>
+                <p class="range">It encompasses a range of tasks and responsibilities related to the organization,
+                    coordination, and deliver of patient care throughout their healthcare.</p>
+                <img src="assets/img/images (11).jpeg" style="width: 100%; border-radius: 10px;">
+            </div>
+        </section>
+    </div>
+
+
+    
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+
+                <h3> <img src="assets/img/clinic (2).png" style="width: 50px;">Clinic Management System</h3>
+
+                <p class="rrr">Welcome to our Clinic</p>
+
+                <div class="social">
+                    <i><img src="assets/img/facebook.png" style="width: 50px;"></i>
+                    <i><img src="assets/img/whatsapp.png" style="width: 50px;"></i>
+                    <i><img src="assets/img/twitter.png" style="width: 50px;"></i>
+                    <i><img src="assets/img/instagram.png" style="width: 50px;"></i>
+                </div>
+            </div>
+
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul class="kazi">
+                    <li class="kazi1"><a href="#faq" class="kazi3">F.A.Q</a></li>
+                    <li class="kazi1"><a href="#cookies-policy" class="kazi3">Cookies Policy</a></li>
+                    <li class="kazi1"><a href="#terms-of-services" class="kazi3">Terms Of Service</a></li>
+                    <li class="kazi1"><a href="#support" class="kazi3">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="column links">
+                <h3>Some Links</h3>
+                <ul class="kazi">
+                    <li class="kazi1"><a href="#faq" class="kazi3">F.A.Q</a></li>
+                    <li class="kazi1"><a href="#cookies-policy" class="kazi3">Cookies Policy</a></li>
+                    <li class="kazi1"><a href="#terms-of-services" class="kazi3">Terms Of Service</a></li>
+                    <li class="kazi1"><a href="#support" class="kazi3">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <input type="email" placeholder="Your email id here" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="footer-down-menu">
+                <a href="" class="kazi3">Home</a>
+                <a href="" class="kazi3">About</a>
+                <a href="" class="kazi3">Contact</a>
+                <a href="" class="kazi3">Blog</a>
+                <a href="" class="kazi3">Social</a>
+            </div>
+            <p>Copyright &copy; 2023 Clever Developer</p>
+        </div>
+    </footer>

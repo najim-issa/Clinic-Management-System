@@ -1,0 +1,24 @@
+.menu-container{
+    width: 200px;
+    background: greenyellow;
+    font-size: 28px;
+}
+
+.menu-toggler{
+    padding: 18px;
+}
+
+.menu{
+    background: #333;
+    color: #fff;
+    padding: 18px;
+}
+
+.menu-item{
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.menu-item:hover{
+    text-decoration: none ;
+}

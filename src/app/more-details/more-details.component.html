@@ -1,0 +1,86 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <img src="assets/img/clinic (2).png" style="width: 50px;">
+    <span>Clinic Management System</span>
+
+    <div class="space"></div>
+    <a mat-raised-button color="accent" href="home">Home</a>
+    <a mat-raised-button href="report1">Generate details</a>
+</mat-toolbar>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div class="container">
+<div mat-dialog-title>
+    <h1>Insert more personal Details</h1>
+</div>
+<div mat-dialog-content class="content">
+    <div class="row"> 
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput type="text" formControlName="firstName" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" formControlName="lastName" required>
+        </mat-form-field>
+    </div>
+
+    <div class="row"> 
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <input matInput type="text" formControlName="address" required>
+        </mat-form-field>
+    </div>
+
+
+ <div class="row"> 
+    <mat-radio-group aria-label="Select an option" formControlName="gender" required>
+        <mat-label>Gender</mat-label>
+            <mat-radio-button value="Male">Male</mat-radio-button>
+            <mat-radio-button value="Female">Female</mat-radio-button>
+            <mat-radio-button value="others">Others</mat-radio-button>
+          </mat-radio-group></div>
+      
+
+  
+<div class="row">
+    <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input matInput type="text" formControlName="phonenumber" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Emergency Phone Number</mat-label>
+        <input matInput type="text" formControlName="epnumber" required>
+    </mat-form-field>
+   
+</div>
+<div class="row">
+    <mat-form-field>
+        <mat-label>Date of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob" required>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker ></mat-datepicker>
+      </mat-form-field>
+    
+      <mat-form-field appearance="outline">
+        <mat-label>State</mat-label>
+        <input matInput type="text" formControlName="state" required>
+    </mat-form-field>
+    </div>
+</div>
+
+<div mat-dialog-actions>
+    <div class="row">
+         <button mat-raised-button color="accent" type="reset">Cancel</button>
+         <button mat-raised-button color="primary" type="submit">Save</button></div>
+   
+</div>
+</div>
+</form>

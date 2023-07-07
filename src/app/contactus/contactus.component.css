@@ -1,0 +1,42 @@
+button{
+    padding: 1em 2em;
+    color: white;
+    border: 0;
+    width: auto;
+    height: auto;
+}
+button:hover{
+    background: #dad8d8;
+}
+
+.modal-content{
+    background-color: white;
+    margin: 10% auto;
+    padding: 70px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(233, 230, 230, 0.2), 0 7px 20px 0 rgb(236, 151, 151);
+    animation-duration: 1s;
+}
+
+.closebtn{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+        to {opacity: 1;}
+    }
+}
+
+.closebtn:hover,.closebtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+H2, p{
+    color: #000;
+}

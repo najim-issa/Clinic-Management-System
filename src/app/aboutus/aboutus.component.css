@@ -1,0 +1,48 @@
+.space{
+    flex: 1 1 auto;
+}
+
+.header {
+    background-color: #89CFF0;
+    padding: 10px 0px 10px 200px;
+    padding-bottom: 40px;
+    right: 0;
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/*font properties clinical management system*/
+.font-properties {
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: initial;
+    padding-top: 5px;
+}
+.outer-footer{
+padding: 30px;
+color: white;
+background-color: #3f3f3f;
+font-size: 18px;
+text-align: center;
+
+}
+
+p{
+margin: 0;
+padding: 0px 50px;
+font-size: 20px;
+text-align: justify;
+}
